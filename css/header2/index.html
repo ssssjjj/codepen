@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>basic :: Layout Test</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap">
+<style>
+body, ul, ol, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, table, th, td {
+	margin: 0;
+	padding: 0;
+}
+body {
+	line-height: 1;
+	font-family: "Open Sans", "Noto Sans KR", sans-serif;
+	font-size: 1em;
+	color: #000;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+img {
+	vertical-align: top;
+}
+
+#header {
+	/* background-color: #eaeaea; */
+	/* max-width: 1365px; */
+}
+
+#header .top {
+	border-bottom: 1px solid #ccc;
+} 
+
+#header .top .top_inner {
+	margin: 0 auto;
+	width: 1365px;
+	height: 55px;
+}
+
+#header .top .top_utils {
+	float: right;
+}
+
+#header .top .top_utils .sing_in {
+	float:left;
+	margin-right: 20px;
+	border-right: 1px solid #ccc; 
+}
+
+#header .top .top_utils .sing_in a {
+	display: block;
+	line-height: 55px;
+	padding: 0 20px;
+	font-weight: bold;
+	color: #aaa;
+}
+
+#header .top .top_utils .search {
+	float:left;
+	margin-top: 10px;
+}
+
+#header .menu {
+	margin: 0 auto;
+	width: 1365px;
+	height: 82px;
+}
+
+#header .menu .logo {
+	float: left;
+	margin-top: 15px;
+}
+
+#gnb {
+	float: right;
+}
+
+#gnb li {
+	float:left;
+}
+
+#gnb li a {
+	display: block;
+	line-height: 82px;
+	padding: 0 16px;
+	color: #535353;
+	font-size: 14px;
+}
+
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+	<header id="header">
+		<div class="top">
+			<div class="top_inner"><!-- 중간에 선넣으려고 만드는것 -->
+				<div class="top_utils">
+					<div class="sing_in"><a href="">Sign in</a></div>
+					<div class="search"><a href=""><img src="images/btn_search.png" alt="btn_search"></a></div>
+					</div>
+				</div>
+			</div>
+		<div class="menu">
+			<div class="logo"><a href=""><img src="images/logo.png" alt="logo"></a></div>
+			<nav id="gnb">
+				<ul>
+					<li><a href="">ABOUT</a></li>
+					<li><a href="">DOWNLOADS</a></li>
+					<li><a href="">DOCUMENTATION</a></li>
+					<li><a href="">COMMUNITY</a></li>
+					<li><a href="">FORUM</a></li>
+					<li><a href="">NEWS</a></li>
+					<li><a href="">BLOG</a></li>
+					<li><a href="">CONTACT</a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+</div>
+</body>
+</html>
