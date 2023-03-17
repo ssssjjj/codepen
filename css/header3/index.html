@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>basic :: Layout Test</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap">
+<style>
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, table, dl, dd {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 16px;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ul, ol {
+	list-style: none;
+}
+img {
+	max-width: 100%;
+	vertical-align: top;
+	border: none;
+}
+body {
+	line-height: 1;
+	font-family: "Open Sans", "Noto Sans KR", sans-serif;
+	font-size: 1em;
+	color: #000;
+}
+
+
+#header .top {
+	min-width: 1200px;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc;
+	
+}
+
+#header .top .top_inner {
+	margin: 0 auto;
+	width: 1200px;
+	height: 39px;
+} 
+
+#header .top_inner .sns {
+	float: left;
+	font-size: 0px;
+}
+
+#header .top_inner .sns li {
+	float: left;
+	border-right: 1px solid #ccc;
+}
+
+#header .top_inner .sns li:first-child {
+	border-left: 1px solid #ccc;
+}
+
+
+#header .top_inner .utils {
+	float: right;
+}
+
+#header .top_inner .utils .zoom{
+	float: left;
+	margin-right: 20px;
+}
+
+#header .top_inner .utils .zoom li {
+	float: left;
+}
+
+#header .top_inner .utils .sign_in {
+	float: right;
+}
+#header .top_inner .utils .sign_in li {
+	float: left;
+	position: relative;
+}
+#header .top_inner .utils .sign_in li::after {
+	content: "";
+	font-size: 16px;
+	width: 1px;
+	height: 13px;
+	background-color: #333;
+	position: absolute;
+	right: 0; 
+	top: 13px; /* 원래는 트렌스폼y어찌고로 맞춤 */
+}
+
+
+#header .top_inner .utils .sign_in li:last-child::after {
+	display: none;
+}
+
+
+#header .top_inner .utils .sign_in a {
+	display: block;
+	padding: 10px;
+	line-height: 19px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #535353;
+}
+#header .top_inner .utils .sign_in li:last-child a {
+	padding-right: 0px;
+}
+
+#header .menu {
+	min-width: 1200px;
+	border-bottom: 3px solid #d3494f;
+
+}
+
+#header .menu .menu_inner {
+	margin: 0 auto;
+	width: 1200px;
+	height: 120px;
+}
+
+#header .menu .menu_inner .logo {
+	float: left;
+	margin-top: 30px;
+}
+
+#header .menu .menu_inner .menu_right {
+	float: right;
+}
+
+#gnb {
+	float: left;
+	margin-right: 37px;
+}
+
+#gnb li {
+	display: inline-block;
+}
+
+#gnb li a {
+	display: block;
+	line-height: 120px;
+	padding: 0 22px;
+}
+
+#header .menu .menu_inner .menu_right .tap {
+	float: left;
+	margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header id="header">
+			<div class="top">
+				<div class="top_inner">
+					<div class="sns">
+						<ul>
+							<li><a href=""><img src="images/icon_sns1.png" alt="icon_sns1"></a></li>
+							<li><a href=""><img src="images/icon_sns2.png" alt="icon_sns2"></a></li>
+							<li><a href=""><img src="images/icon_sns3.png" alt="icon_sns3"></a></li>
+							<li><a href=""><img src="images/icon_sns4.png" alt="icon_sns4"></a></li>
+							<li><a href=""><img src="images/icon_sns5.png" alt="icon_sns5"></a></li>
+						</ul>
+					</div>
+					<div class="utils">
+						<div class="zoom">
+							<ul>
+								<li><a href=""><img src="images/icon_zoon_in.png" alt="icon_zoon_in"></a></li>
+								<li><a href=""><img src="images/icon_refresh.png" alt="icon_refresh"></a></li>
+								<li><a href=""><img src="images/icon_zoom_out.png" alt="icon_zoom_out"></a></li>
+							</ul>
+						</div>
+						<div class="sign_in">
+							<ul>
+								<li><a href="">로그인</a></li>
+								<li><a href="">회원가입</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="menu">
+				<div class="menu_inner">
+					<div class="logo"><h1 id="logo"><a href=""><img src="images/logo.png" alt="logo"></a></h1></div>
+					<div class="menu_right">
+						<nav id="gnb">
+							<ul>
+								<li><a href="">소식ㆍ정보ㆍ소통</a></li>
+								<li><a href="">시행학</a></li>
+								<li><a href="">평생학습형</a></li>
+								<li><a href="">일자리</a></li>
+								<li><a href="">광주시민대학</a></li>
+								<li><a href="">진흥원</a></li>
+							</ul>
+						</nav>
+						<div class="tap"><a href=""><img src="images/tab.png" alt="tab"></a></div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+</body>
+</html>
